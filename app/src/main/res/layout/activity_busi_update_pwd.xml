@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BusiUpdatePwdActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_UpdatePwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="修改密码"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/et_shopPwd_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="请输入店铺密码" />
+
+    <EditText
+        android:id="@+id/et_shopPwd_Update_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="确认店铺密码" />
+
+    <Button
+        android:id="@+id/btn_UpdatePwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/blue"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="确认"
+        android:textColor="@color/white" />
+
+</LinearLayout>

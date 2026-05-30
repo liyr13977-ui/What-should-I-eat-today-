@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.BusiUpdateFoodActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_Updatefood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="商品修改"
+        app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_foodPicture_Update"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/img_round"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                tools:targetApi="s"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shop_picture"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal|center_vertical"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品名称"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/et_foodName_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入商品名称" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品价格"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/et_foodPrice_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入商品价格" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品数量"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/et_foodNum_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入商品数量" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品介绍"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_foodDescribe_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入商品介绍"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:maxLines="5"
+                    android:textSize="20sp"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/rounded_edittext" />
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_UpdateFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/UpdateFood"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btn_DeleteFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/DeleteFood"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

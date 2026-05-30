@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterBusinessActivity"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_registerBusi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="商家注册"
+        app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店铺头像"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal|center_vertical"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/et_account_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入账号" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_pwd_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPassword"
+                android:hint="请输入密码" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/et_contact_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPassword"
+                android:hint="请输入联系方式" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="店铺名称"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_name_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入店铺名称" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="配送费"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_registerBusi_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入店铺配送费" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="介绍"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/et_describe_registerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入店铺介绍"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:textSize="20sp"
+                android:maxLines="5"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:background="@drawable/rounded_edittext"/>
+
+
+
+            <Button
+                android:id="@+id/btn_finalRegisterB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/login_btn"
+                android:text="@string/resigter"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

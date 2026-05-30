@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_user_payment_foodImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/img_round"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            tools:targetApi="s" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tv_user_payment_foodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_payment_foodName"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_user_payment_foodNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/tv_user_payment_foodPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:gravity="right|bottom"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

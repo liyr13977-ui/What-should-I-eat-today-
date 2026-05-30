@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.BusiUpdateFoodActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_user_changeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="修改个人信息"
+        app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_user_changeInfo_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/upimg"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/img_round_oval"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                tools:targetApi="s"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="头像"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal|center_vertical"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_user_changeInfo_nickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入昵称" />
+
+
+                <RadioGroup
+                    android:id="@+id/rg_user_changeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_user_changeInfo_Male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/male"/>
+                    <RadioButton
+                        android:id="@+id/rb_user_changeInfo_Female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/female"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="密码"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_user_changeInfo_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入密码" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/et_user_changeInfo_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入手机号" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_user_changeInfo_ensure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="确认修改"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

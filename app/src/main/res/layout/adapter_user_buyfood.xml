@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_user_buyfood_foodImg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/img_round"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            tools:targetApi="s" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tv_user_buyfood_foodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user_buyfood_foodDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_buyfood_foodName"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/tv_user_buyfood_foodDesc">
+
+
+                    <TextView
+                        android:id="@+id/tv_user_buyfood_foodSales"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_buyfood_foodMark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_buyfood_foodPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"/>
+
+                    <ImageView
+                        android:id="@+id/iv_user_buyfood_subFood"
+                        android:layout_width="0dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/jianhao" />
+
+                    <TextView
+                        android:id="@+id/tv_user_buyfood_foodNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_user_buyfood_addFood"
+                        android:layout_width="0dp"
+                        android:layout_height="22dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/jiahao" />
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

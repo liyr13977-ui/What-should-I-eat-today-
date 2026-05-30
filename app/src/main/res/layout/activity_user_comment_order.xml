@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.UserCommentOrderActivity"
+    android:background="@color/foodList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_user_commentOrder_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="订单评价"
+        app:titleTextColor="@color/white" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user_comment_foodlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@+id/tb_user_commentOrder_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_commentOrder_businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical|left"
+                tools:ignore="RtlHardcoded"
+                android:layout_margin="10dp"/>
+
+            <ListView
+                android:id="@+id/lv_user_commentOrder_foodlist"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user_comment_deliveryMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@+id/cv_user_comment_foodlist">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="配送员"
+                    android:gravity="center_vertical|left"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_user_commentOrder_deliveryMan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginLeft="20dp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/rb_user_commentOrder_Deliverystart"
+                android:numStars="5"
+                android:progressTint="@color/ThemeColor"
+                android:secondaryProgressTint="@color/ThemeColor"
+                android:progressBackgroundTint="#ffe7e7e7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="114dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_user_comment_deliveryMan"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="总体评价"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/rb_user_commentOrder_OrderStar"
+                android:numStars="5"
+                android:progressTint="@color/ThemeColor"
+                android:secondaryProgressTint="@color/ThemeColor"
+                android:progressBackgroundTint="#B1B1B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.5"
+                android:scaleY="0.5"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/et_user_commentOrder_content"
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top"
+            android:hint="输入评价"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+
+        <Button
+            android:id="@+id/btn_user_commentOrder_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="确认提交"
+            android:textColor="@color/white"
+            tools:ignore="UnusedAttribute" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

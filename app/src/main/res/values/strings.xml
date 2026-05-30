@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">今天吃什么</string>
+    <string name="title">今 天 吃 什 么</string>
+    <string name="title_intro">让南中医学生的胃口全部消失！</string>
+    <string name="account">账号</string>
+    <string name="pwd">密码</string>
+    <string name="business">商家</string>
+    <string name="user">用户</string>
+    <string name="login">登录</string>
+    <string name="resigter">注册</string>
+    <string name="resigterBusi">注册商家</string>
+    <string name="resigterUser">注册用户</string>
+    <string name="shopType">店铺类型</string>
+    <string name="shopDescribe">店铺描述</string>
+    <string name="shopName">店铺名称</string>
+    <string name="nickName">昵称</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="address">家庭住址</string>
+    <string name="phone">联系方式</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_picture">商品图片</string>
+    <string name="shop_name">商品名称</string>
+    <string name="shop_price">商品价格</string>
+    <string name="food_describe">商品描述</string>
+    <string name="add">添加</string>
+    <string name="UpdateFood">确认更新</string>
+    <string name="DeleteFood">删除商品</string>
+    <string name="change_shop_message">修改店铺信息</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="exit">退出账号</string>
+    <string name="zero">0</string>
+    <string name="shop">商品</string>
+    <string name="comment">评价</string>
+    <string name="schedule">预计时间30分钟</string>
+    <string name="deliveryfee">配送费：</string>
+</resources>

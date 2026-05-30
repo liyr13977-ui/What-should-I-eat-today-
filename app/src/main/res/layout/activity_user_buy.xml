@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserBuyActivity"
+    android:orientation="vertical"
+    android:background="@color/foodList">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_user_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="店铺"
+        app:titleTextColor="@color/white">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_buy_shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user_buy_businessId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_user_buy_mark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_buy_sale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_buy_fee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_user_buy_shopDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_user_buy_shopImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/upimg"
+                android:background="@drawable/img_round"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                tools:targetApi="s" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_user_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tl_user_buy"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/navigation_bar"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/navigation_bar"
+            tools:ignore="NotSibling"
+            android:background="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:text="@string/shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabItem
+                android:text="@string/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp2_user_buy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/tl_user_buy">
+        </androidx.viewpager2.widget.ViewPager2>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            app:layout_constraintBottom_toTopOf="@+id/ll_user_buy"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_user_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/tb"
+                android:layout_marginEnd="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_user_buy_totalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/zero"
+                android:textSize="22sp"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_user_buy_saveFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_user_buy_settlement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="去结算"
+                android:textColor="@color/white"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

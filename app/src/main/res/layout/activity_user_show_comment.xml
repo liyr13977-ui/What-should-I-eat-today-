@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/foodList"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.BusiShowCommentActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_busi_showComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="店铺评论"
+        app:titleTextColor="@color/white" />
+
+
+    <ListView
+        android:id="@+id/lv_busi_buyComment_OrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/foodList"
+        android:divider="@color/foodList"
+        android:dividerHeight="12dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

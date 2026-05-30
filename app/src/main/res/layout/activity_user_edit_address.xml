@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/foodList"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterUserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_user_editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="收货地址"
+        app:titleTextColor="@color/white" />
+
+    <ListView
+        android:id="@+id/lv_user_editAddress_addressList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/foodList"
+        android:divider="@color/foodList"
+        android:dividerHeight="12dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/btn_user_editAddress_newAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/login_btn"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="新增收货地址"
+        android:textColor="@color/white"
+        tools:ignore="UnusedAttribute" />
+
+
+</LinearLayout>

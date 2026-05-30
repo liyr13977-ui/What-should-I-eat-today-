@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterUserActivity"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_regiDeliveryMan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        app:navigationIcon="@drawable/back"
+        app:title="配送员注册"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textSize="14sp"
+                android:layout_marginTop="50dp"/>
+
+
+            <EditText
+                android:id="@+id/et_regiDeliveryMan_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入账号" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_regiDeliveryMan_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_regiDeliveryMan_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入姓名" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电话号码"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/et_regiDeliveryMan_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入电话号码" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="介绍"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/et_regiDeliveryMan_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="请输入个人介绍"
+                android:minLines="4"
+                android:gravity="start"/>
+
+            <Button
+                android:id="@+id/et_regiDeliveryMan_ensure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/resigter"
+                android:textColor="@color/white"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

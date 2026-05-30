@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.orderfood">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appiconcircle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrderFood"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.OrderInfo2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiShowCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserChangeInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserCommentOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryMyFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryMyDCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterDeliveryManActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryChangeInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryOrderInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserEditAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiMyAwaitingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiMyUnderwayOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiMyCancelOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiMyCompleteOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiMyAllOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserMyFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserMyCancelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserMyAwaitingActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.UserMyAllOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UserPaymentActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.UserBuyActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.BusiUpdatePwdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiUpdateShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusiUpdateFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BusinessActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
